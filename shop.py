@@ -10,7 +10,9 @@ async def on_startup(_):
 from handlers import client, admin, other
 
 client.register_handler_client(dp)
-other.register_handler_other(dp)
+admin.register_handler_admin(dp)
+other.register_handler_other(dp) # последний
+
 
 executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
 
