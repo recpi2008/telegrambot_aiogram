@@ -8,5 +8,5 @@ b5 = KeyboardButton('Отправить местоположение', request_l
 
 kb_client = ReplyKeyboardMarkup(resize_keyboard=True)
 
-kb_client.add(b1).add(b2).add(b3)#.row(b4,b5)
+kb_client.add(b1).add(b2).add(b3).row(b4,b5)
 # kb_client.row(b1,b2,b3).insert(b3)
