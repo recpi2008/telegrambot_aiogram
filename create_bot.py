@@ -1,8 +1,12 @@
 from aiogram import Bot
 from aiogram.dispatcher import Dispatcher
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
+import os
 
-from config import token
+from dotenv import load_dotenv
+
+load_dotenv(r'/home/eles/projects/telegram_bot_shop/.env')
+token = os.getenv("TOKEN",None)
 
 storage = MemoryStorage()
 
